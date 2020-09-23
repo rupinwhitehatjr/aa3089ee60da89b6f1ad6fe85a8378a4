@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>#QuestionNumber on Day #day in #Level</title>
+<link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/text.css" />
+<link rel="stylesheet" href="../css/960.css" />
+<link rel="stylesheet" href="../css/demo.css" />
+<link rel="stylesheet" href="../css/custom.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBF4daUkQEGeiJCvEkCETiZOFDgHyrM_u8",
+    authDomain: "bombay-international-final.firebaseapp.com",
+    databaseURL: "https://bombay-international-final.firebaseio.com",
+    projectId: "bombay-international-final",
+    storageBucket: "bombay-international-final.appspot.com",
+    messagingSenderId: "216046228955",
+    appId: "1:216046228955:web:4cf9cf2221fb246488c3fe"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/firebaseUtils.js"></script>
+<script src="../js/firebaseUtils.js"></script>
+</head>
+<body>
+
+<input type='hidden' id="questionnumber" value="#QuestionNumber"></input>
+<input type='hidden' id="day" value="#day"></input>
+<input type='hidden' id="level" value="#Level"></input>
+<input type='hidden' id="key" value="#key"></input>
+
+<div class="container_12">
+  <div class="grid_2">
+    <a href="0.html" class="button">Home</a>
+  </div> 
+<div class="clear"></div> 
+  <h2>
+    Question Number: #QuestionNumber on Day #day in #Level
+  </h2>
+  <h3>
+    #key
+  </h3>
+  <div class="grid_12 #selected">
+    <p>
+     <b>Q.</b> #question
+    </p>
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+
+  
+
+  <div class="grid_12 centeredimage">
+   #questionimage
+  </div>
+  
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+
+  <div class="grid_6">
+    <p class="_A">
+     <b>A</b>: #optionA
+    </p>
+  </div>
+ 
+  <div class="grid_6">
+    <p class="_B">
+       <b> B</b>: #optionB
+    </p>
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+
+  <div class="grid_6">
+    <p class="_C">
+      <b>C</b>: #optionC
+    </p>
+  </div>
+ 
+  <div class="grid_6">
+    <p class="_D">
+      <b>D</b>: #optionD
+    </p>
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+
+  <div class="grid_12">
+    <p>
+      <b>Answer Option:</b> #AnswerOption
+    </p>
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+
+   <div class="grid_1">
+    &nbsp;
+  </div>
+
+   <div class="grid_3 centeredimage" >
+    <a href='javascript:updateRank("reviewed")'><img src='../img/thumbsup.png'></a>
+  </div>
+
+   
+
+   <div class="grid_3 centeredimage" >
+    <a  href='javascript:updateRank("wrongoption")'><img src='../img/cross.png'></a>
+  </div>
+  
+  <div class="grid_3 centeredimage" >
+    <a  href='javascript:updateRank("grammarissue")'><img src='../img/pencil.png'></a>
+    
+  </div>
+  
+ 
+  <div class="grid_1">
+    &nbsp;
+  </div>
+
+ 
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+
+  <div class="grid_2 centeredimage">
+    <a class='button' href='#previousLink'>Previous</a>
+  </div>
+
+  <div class="grid_8">
+    &nbsp;
+  </div>
+
+  
+  
+
+  <div class="grid_2 centeredimage" >
+    <a class='button' href='#nextLink'>Next</a>
+  </div>
+  
+  <div class="clear"></div>
+
+  <div class="grid_12">
+    
+      &nbsp;
+    
+  </div>
+  <!-- end .grid_12 -->
+  <div class="clear"></div>
+ 
+</div>
+<!-- end .container_16 -->
+</body>
+</html>
